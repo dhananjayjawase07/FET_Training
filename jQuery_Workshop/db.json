@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "firstname": "danny",
+      "lastname": "jass",
+      "username": "danny",
+      "password":"1234",
+      "address":"pune",
+      "pincode":"154202"
+    }
+  ]
+}
