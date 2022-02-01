@@ -1,0 +1,157 @@
+body {
+  width: auto;
+  margin: 2em auto;
+  font: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: ()[minmax];
+      grid-template-columns: repeat(minmax(0, 1fr));
+  grid-gap: 20px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header,
+footer {
+  width: auto;
+  color: white;
+  padding: 10px;
+  background-color: #3e4340;
+}
+
+input {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ee1650;
+  background-color: transparent;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: #ee1650 solid;
+  height: 7%;
+  width: 100%;
+}
+
+aside {
+  padding-left: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+article {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 9;
+  grid-column: 4 / 13;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+aside {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+footer {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+@media all and (orientation: portrait) {
+  .container {
+    padding-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  aside {
+    padding-left: 50px;
+    max-width: 350px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #3e4340;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: white;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: #ee1650;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+/*# sourceMappingURL=app.css.map */

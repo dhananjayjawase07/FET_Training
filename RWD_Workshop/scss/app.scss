@@ -1,0 +1,136 @@
+$bg-color: rgb(62, 67, 64);
+$accent-color:rgb(238, 22, 80);
+$text-color: white;
+$font:(Arial, Helvetica, sans-serif);
+
+
+body {
+    width: auto;
+    margin: 2em auto;
+    font:$font;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(minmax(0,1fr));
+    grid-gap: 20px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+header,
+footer {
+    width: auto;
+    color:white;
+    padding: 10px;
+    background-color: $bg-color;
+    
+}
+input {
+    font-family: $font;
+    color: $accent-color;
+    background-color: transparent;
+    justify-content: center;
+    border: $accent-color solid;
+    height: 7%;
+    width: 100%;
+}
+aside {
+    padding-left: 20px;
+    justify-content: center;
+}
+
+header {
+    grid-column: 1 / 13;
+    grid-row: 1;
+  }
+  
+  article {
+    grid-column: 4 / 13;
+    grid-row: 2;
+  }
+  
+  aside {
+    grid-column: 1 / 4;
+    grid-row: 2;
+  }
+  
+  footer {
+    grid-column: 1 / 13;
+    grid-row: 3;
+  }
+
+@media all and (orientation:portrait) {
+    .container{
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    aside {
+        padding-left: 50px;
+        max-width: 350px;
+        justify-content: center;     
+    }
+}
+
+//nav bar
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: $bg-color;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: $text-color;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: $text-color;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: $accent-color;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+
+
