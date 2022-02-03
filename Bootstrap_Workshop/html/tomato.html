@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="../js/home.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="well">
+                    <h2 class="h3">SOME FAVORITES</h2>
+                    <li><span role="button" tabindex="0">Celery Root</span></li>
+                    <li><span role="button" tabindex="0">Spaghetti Squash</span></li>
+                    <li><span role="button" tabindex="0">Killer Mushrooms</span></li>
+                    <li><span role="button" tabindex="0" onclick="window.location='tomato.html';">Tomatoes</span></li>
+                    <li><span role="button" tabindex="0" onclick="window.location='beetroot.html';">Beetroots</span>
+                    </li>
+                    <hr>
+                    <input type="text" class="form-control" id="search"><br>
+                    <button type="button" class="btn btn-success" onclick="search_function">Search Recipes</button>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <h1><strong>Wild &amp; Wacky Vegetables</strong></h1>
+                <h2 class="display-5">Tomatoes</h2>
+                <blockquote>
+                    <p id="info">The tomato (Solanum lycopersicum) is a fruit from the nightshade family native to South
+                        America.
+
+                        Despite botanically being a fruit, it’s generally eaten and prepared like a vegetable.
+
+                        Tomatoes are the major dietary source of the antioxidant lycopene, which has been linked to many
+                        health benefits, including reduced risk of heart disease and cancer.
+
+                        They are also a great source of vitamin C, potassium, folate, and vitamin K.
+
+                        Usually red when mature, tomatoes can also come in a variety of colors, including yellow,
+                        orange, green, and purple. What’s more, many subspecies of tomatoes exist with different shapes
+                        and flavor.
+                    </p>
+
+                    <img src="https://ychef.files.bbci.co.uk/976x549/p04w46sp.jpg" alt="" width="80%">
+
+
+                    <h4>Nutrition facts</h4>
+                    <ul>
+                        <li>Calories: 18
+                        </li>
+                        <li>Water: 95%
+                        </li>
+                        <li>
+                            Protein: 0.9 grams
+                        </li>
+                        <li>Carbs: 3.9 grams
+                        </li>
+                        <li>Sugar: 2.6 grams
+                        </li>
+                        <li>Fiber: 1.2 grams
+                        </li>
+                        <li>Fat: 0.2 grams</li>
+                    </ul>
+                </blockquote>
+            </div>
+
+        </div>
+    </div>
+</body>
